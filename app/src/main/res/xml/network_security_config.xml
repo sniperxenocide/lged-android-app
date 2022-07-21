@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true"/>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.160.72.57:8082/lged/api/v1/resource/center/</domain>
+        <domain includeSubdomains="true">10.160.72.57:8082/lged/api/v1//api-token-auth/</domain>
+        <domain includeSubdomains="true">10.160.72.57:8082/lged/api/v1//api-token-verify/</domain>
+        <domain includeSubdomains="true">10.160.72.57:8082/lged/api/v1/app/</domain>
+    </domain-config>
+</network-security-config>

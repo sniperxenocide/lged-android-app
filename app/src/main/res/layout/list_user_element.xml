@@ -1,0 +1,95 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/element_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/userProPic"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/default_profile_pic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/usrName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/usrName"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="TextView"
+            android:textColor="@color/dark_purple"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/userProPic"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/usrDetailButton"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/detail_button_back"
+            android:text="DETAIL"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usrAddress" />
+
+        <TextView
+            android:id="@+id/usrAddress"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:text="TextView"
+            android:textColor="@color/dark_purple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/userProPic"
+            app:layout_constraintTop_toBottomOf="@+id/usrName" />
+
+        <TextView
+            android:id="@+id/usrPhone"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:paddingLeft="5dp"
+            android:text="TextView"
+            android:textColor="@color/dark_purple"
+            app:layout_constraintEnd_toStartOf="@+id/usrDetailButton"
+            app:layout_constraintStart_toEndOf="@+id/userProPic"
+            app:layout_constraintTop_toBottomOf="@+id/usrAddress" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

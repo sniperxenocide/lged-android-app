@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/menu_office_profile"
+        android:icon="@drawable/office_profile"
+        android:title="OFFICE PROFILE"
+        android:onClick="menuOfficeProfile"/>
+
+    <item android:id="@+id/menu_user_profile"
+        android:title="USER PROFILE"
+        android:icon="@drawable/user_profile"
+        android:onClick="menuUserProfile"
+        />
+
+    <item android:id="@+id/menu_project_profile"
+        android:title="PROJECT PROFILE"
+        android:icon="@drawable/project_profile"
+        android:onClick="menuProjectProfile"/>
+
+    <item android:id="@+id/menu_tender_status"
+        android:title="TENDER STATUS"
+        android:icon="@drawable/tender_status"
+        android:onClick="menuTenderStatus"/>
+
+    <item android:id="@+id/menu_inventory_records"
+        android:title="INVENTORY RECORDS"
+        android:icon="@drawable/inventory_records"
+        android:onClick="menuInventoryRecord"/>
+
+    <item android:id="@+id/menu_budgets"
+        android:title="BUDGETS"
+        android:icon="@drawable/budjet"
+        android:onClick="menuBudget"/>
+
+    <item android:id="@+id/menu_external_members"
+        android:title="EXTERNAL MEMBERS"
+        android:icon="@drawable/external_members"
+        android:onClick="menuExternalMembers"/>
+
+    <item
+        android:id="@+id/menu_logout"
+        android:icon="@drawable/lg_out"
+        android:onClick="menuLogOut"
+        android:title="LOG OUT"
+        />
+
+
+</menu>

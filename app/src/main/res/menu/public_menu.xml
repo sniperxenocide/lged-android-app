@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/menu_about"
+        android:title="ABOUT"
+        android:onClick="menuAbout"
+        android:icon="@drawable/abt"/>
+
+    <item android:id="@+id/menu_egp"
+        android:title="EGP CENTERS"
+        android:onClick="menuEGP"
+        android:icon="@drawable/egp"
+        />
+
+    <item android:id="@+id/menu_download"
+        android:title="DOWNLOAD"
+        android:onClick="menuDownload"
+        android:icon="@drawable/dld"
+        />
+
+    <item android:id="@+id/menu_gallery"
+        android:title="GALLERY"
+        android:onClick="menuGallery"
+        android:icon="@drawable/glr"
+        />
+
+    <item android:id="@+id/menu_notice"
+        android:title="NOTICES"
+        android:onClick="menuNotice"
+        android:icon="@drawable/ntc"
+        />
+
+    <item android:id="@+id/menu_contact"
+        android:title="CONTACT"
+        android:onClick="menuContact"
+        android:icon="@drawable/cnt"
+        />
+
+    <item android:id="@+id/menu_link"
+        android:title="LINKS"
+        android:onClick="menuLink"
+        android:icon="@drawable/lnk"
+        />
+
+    <item
+        android:id="@+id/menu_login"
+        android:title="LOGIN"
+        android:onClick="menuLogin"
+        android:icon="@drawable/lgn"
+        />
+
+
+
+</menu>
